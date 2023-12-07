@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 type InitialStateType = {
-  value?: Data.User;
+  value?: Dto.User;
 };
 
 const initialState: InitialStateType = {

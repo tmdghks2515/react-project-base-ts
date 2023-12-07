@@ -1,4 +1,4 @@
-declare namespace Data {
+declare namespace Dto {
   type User = {
     username: string;
   };

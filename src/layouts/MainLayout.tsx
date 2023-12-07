@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { logout } from '../../store/slices/user.slice';
-import { ReducerType } from '../../store/rootReducer';
+import { logout } from '../store/slices/user.slice';
+import { ReducerType } from '../store/rootReducer';
+import SideNav from '../components/navs/SideNav';
 
 function MainLayout() {
   const user = useSelector((state: ReducerType) => state.user.value);
@@ -27,6 +28,8 @@ function MainLayout() {
           <Link to='/login'>로그인</Link>
         )}
       </header>
+
+      <SideNav />
 
       <Outlet />
     </>

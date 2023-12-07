@@ -1,7 +1,9 @@
 import api from '../api';
 
-export const authService = {
+const authService = {
   login: () => {
     api.post('/login');
   },
 };
+
+export default authService;
